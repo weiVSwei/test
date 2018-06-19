@@ -1,0 +1,51 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - FLAnimatedImage (1.0.12)
+  - Masonry (0.5.3)
+  - MJExtension (3.0.13)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SDWebImage/GIF (4.1.2):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Masonry (= 0.5.3)
+  - MJExtension (~> 3.0.10)
+  - SDWebImage (~> 4.1.0)
+  - SDWebImage/GIF
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - FLAnimatedImage
+    - Masonry
+    - MJExtension
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Masonry: 9f515466afe48632562342a40a1c224071a1a022
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+
+PODFILE CHECKSUM: 79bff97c82ad1d99729c651eecec701c6b04ecdb
+
+COCOAPODS: 1.5.0

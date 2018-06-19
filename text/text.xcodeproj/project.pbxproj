@@ -15,6 +15,7 @@
 		53375E2420D8E4C60023DFD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53375E2320D8E4C60023DFD3 /* main.m */; };
 		53375E2E20D8E4C60023DFD3 /* textTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53375E2D20D8E4C60023DFD3 /* textTests.m */; };
 		53375E3920D8E4C60023DFD3 /* textUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53375E3820D8E4C60023DFD3 /* textUITests.m */; };
+		7A8E44AB6C5C8AA45A93A51E /* libPods-text.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7420D642DCC83653ED00308A /* libPods-text.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2636DEC1489E8E981E50F33C /* Pods-text.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-text.debug.xcconfig"; path = "Pods/Target Support Files/Pods-text/Pods-text.debug.xcconfig"; sourceTree = "<group>"; };
 		53375E1120D8E4C40023DFD3 /* text.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = text.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53375E1420D8E4C50023DFD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53375E1520D8E4C50023DFD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		53375E3420D8E4C60023DFD3 /* textUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53375E3820D8E4C60023DFD3 /* textUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textUITests.m; sourceTree = "<group>"; };
 		53375E3A20D8E4C60023DFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7420D642DCC83653ED00308A /* libPods-text.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-text.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FA1DF5E87CD2ADF025B2DB7 /* Pods-text.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-text.release.xcconfig"; path = "Pods/Target Support Files/Pods-text/Pods-text.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8E44AB6C5C8AA45A93A51E /* libPods-text.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				53375E2C20D8E4C60023DFD3 /* textTests */,
 				53375E3720D8E4C60023DFD3 /* textUITests */,
 				53375E1220D8E4C40023DFD3 /* Products */,
+				90F75EAC4C92FC6F90D202C1 /* Pods */,
+				C8A7456E500F9EA294FD07A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = textUITests;
 			sourceTree = "<group>";
 		};
+		90F75EAC4C92FC6F90D202C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2636DEC1489E8E981E50F33C /* Pods-text.debug.xcconfig */,
+				7FA1DF5E87CD2ADF025B2DB7 /* Pods-text.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8A7456E500F9EA294FD07A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7420D642DCC83653ED00308A /* libPods-text.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 53375E3D20D8E4C60023DFD3 /* Build configuration list for PBXNativeTarget "text" */;
 			buildPhases = (
+				7E63EC27F40D18603CD21ADB /* [CP] Check Pods Manifest.lock */,
 				53375E0D20D8E4C40023DFD3 /* Sources */,
 				53375E0E20D8E4C40023DFD3 /* Frameworks */,
 				53375E0F20D8E4C40023DFD3 /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E63EC27F40D18603CD21ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-text-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		53375E0D20D8E4C40023DFD3 /* Sources */ = {
@@ -431,14 +477,12 @@
 		};
 		53375E3E20D8E4C60023DFD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2636DEC1489E8E981E50F33C /* Pods-text.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = text/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,14 +491,12 @@
 		};
 		53375E3F20D8E4C60023DFD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA1DF5E87CD2ADF025B2DB7 /* Pods-text.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = text/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,11 +509,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = textTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.textTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,11 +523,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = textTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.textTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,11 +536,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = textUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.textUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,11 +549,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = textUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cui.text.textUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
